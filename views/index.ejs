@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Band name generator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Name Generator</h1>
+    <div class="container">
+    <form action="submit" method="post">
+        <% if (locals.Noun && locals.Adj){ %>
+        
+      <h1><%= Noun %> - <%= Adj %> </h1>
+      <% }else{ %>
+
+        <h1>Band name generator</h1>
+        <% } %>
+        
+     
+        <button type="submit">Generate name</button>
+    </form>
+    </div>
+    
+</body>
+</html>
